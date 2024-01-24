@@ -1,17 +1,22 @@
 import { Container } from "react-bootstrap";
-import FlagOutcome from "./statement_outcome/FlagOutcome";
-import NavBar from "./NavBar";
-import TextAreaOutcome from "./statement_outcome/TextAreaOutcome";
+import QualityStatementExample from "./QualityStatementExample";
+import QualityStatementGroup1 from "./QualityStatementGroup1";
+import QualityStatementGroup2 from "./QualityStatementGroup2";
 
 const Home = () => {
   return (
     <>
-      <NavBar />
-      <Container fluid className="background">        
+      <Container fluid className="background">
         <div className="background">
           <div className="whiteBG mt-5">
-            <TextAreaOutcome />
-            <FlagOutcome />
+            <h1 className="text-center">SECTION TITLE</h1>
+            <div className="d-flex justify-content-evenly">
+              <QualityStatementExample />
+              <div className="d-flex justify-content-between w-50">
+                <QualityStatementGroup1 />
+                <QualityStatementGroup2 />
+              </div>
+            </div>
           </div>
         </div>
       </Container>
